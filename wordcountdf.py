@@ -15,9 +15,9 @@ class WordExtractingDoFn(beam.DoFn):
     """Returns an iterator over the words of this element.
     The element is a line of text.  If the line is blank, note that, too.
     Args:
-      element: the element being processed
+      element: the element being processed. Ohhhh okay
     Returns:
-      The processed element.
+      The processed element. WOWWW Noice
     """
     return re.findall(r'[\w\']+', element, re.UNICODE)
 
